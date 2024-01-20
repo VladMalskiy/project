@@ -4,18 +4,218 @@
 <head>
 	<title>Project</title>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-	<header id="home">
-		<div class="main">
+	<main id="home">
 			
-            <div class="navbar">
-                <div class="logo_menu">
-                    <img src="images/logo.png" alt="Логотип">
+        <div class="gradient">
+            <header class="navbar">
+                <div class="container header__container">
+                    <a href="/" class="logo_menu">
+                        <img src="images/logo.png" alt="Логотип">
+                    </a>
+                    <div class="menu">
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">Product</a></li>
+                                <li><a href="#directions">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="button_menu">
+                        <a class="login_btn" href="#">Login</a>
+                    </div>
                 </div>
-                <div class="menu">
+            </header>
+    
+            <hr class="conf"/>
+    
+            <div class="oval1"></div>
+            <div class="oval2"></div>
+    
+    
+    
+            <section class="presentation">
+    
+                <div class="presentation_text">
+                    <h1>Lightning fast prototyping</h1>
+                    <p>Most calendars are designed for teams. Slate is designed for freelancers.</p> 
+                </div>
+    
+                <div class="presentation__buttons">
+                    <button class="presentation__button btn" type="button">
+                        Get Started
+                    </button>
+                    <button class="presentation__button btn" type="button">
+                        Try For Free
+                    </button>
+                </div>
+    
+            </section>
+    
+    
+            <section class="browser">
+                <img src="./images/browser.png" alt="Браузер">
+            </section>
+        </div>
+
+        <section class="page2">
+            <div class="text">
+                <h1>Just type</h1>
+              <h2>Fastest way to navigate</h2>
+              <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
+            </div>
+            <div class="page2__buttons">
+                <button class="page2__button btn" type="button">
+                    Get Started
+                </button>
+                <button class="page2__button btn" type="button">
+                    Try For Free
+                </button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__item features-item">
+                <div class="container features-item__container">
+                    <div class="features-item__info">
+                        <h4 class="features-item__title">OpenType features</h4>
+                        <p class="features-item__text">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                        <a class="features-item__link" href="#">Learn more</a>
+                    </div>
+                    <img class="features-item__image" src="./images/feature1.png" alt="feature image">
+    
+                    <img class="features-item__bg--blue" src="./images/blueVector.png" alt="">
+                </div>
+            </div>
+            <div class="features__item features-item">
+                <div class="container features-item__container">
+                    <img class="features-item__image" src="./images/feature2.png" alt="feature image">
+                    <div class="features-item__info">
+                        <h4 class="features-item__title">OpenType features</h4>
+                        <p class="features-item__text">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                        <a class="features-item__link" href="#">Learn more</a>
+                    </div>
+
+                    <img class="features-item__bg--yellow" src="./images/yellowVector.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="how-work">
+           <div class="container how-work__container">
+                <h2 class="how-work__title">A rethink of how we work</h2>
+                <h3 class="how-work__subtitle">Being a freelancer is a rollercoaster of emotions. We built Slate to keep your </h3>
+                <div class="how-work__progress">
+                    <div class="how-work__progressbar">
+                        <div class="how-work__progressbar--filled"></div>
+                    </div>
+                    <div class="how-work__progressbar-info">
+                        <span class="how-work__progressbar-facebook">Facebook</span>
+                        <span class="how-work__progressbar-count">35,929</span>
+                    </div>
+                </div> 
+                <button type="button" class="how-work__button btn">Get Started For Free</button>
+           </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container testimonials__container">
+                <h2 class="testimonials__title">Testimonials</h2>
+                <svg class="testimonials__icon">
+                    <use xlink:href="./images/sprite.svg#ibm"></use>
+                </svg>   
+                <p class="testimonials__text">Being a freelancer is a rollercoaster of emotions. 
+                We built Slate to keep your freelance business less stressful. 
+                We'd love to show you what we're building...</p>
+                <div class="testimonials__user">
+                    <img src="./images/avatar.png" alt="">
+                    <div class="testimonials__user-info">
+                        <span class="testimonials__user-name">Esther Webb</span>
+                        <span class="testimonials__user-status">Designer</span>
+                    </div>
+                </div>
+                <button type="button" class="testimonials__button btn">All Testimonials</button>
+            </div>
+         </section>
+         <section class="pricing">
+            <div class="container pricing__container">
+                <div class="pricing__info">
+                    <h2 class="pricing__title">Pricing</h2>
+                    <p class="pricing__text">Most calendars are designed for teams. Slate is 
+                        designed for freelancers who want a simple 
+                        way to plan their schedule.</p>
+                </div>
+
+                <div class="pricing-items pricing__items">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper">
+                        <div class="pricing-items__wrapper swiper-wrapper">
+                            <div class="swiper-slide pricing-items__item pricing-item">
+                                <span class="pricing-item__term">30-DAY FREE TRIAL</span>
+                                <div class="pricing-item__price-box">
+                                    <span class="pricing-item__price">$5</span>
+                                    <span class="pricing-item__per-month">/month per <br> user</span>
+                                </div>
+                                <span class="pricing-item__description">Most calendars are designed for teams.</span>
+                                <button class="pricing-item__button btn">Get Started</button>
+                            </div>
+                            <div class="swiper-slide pricing-items__item pricing-item">
+                                <span class="pricing-item__term">3 month</span>
+                                <div class="pricing-item__price-box">
+                                    <span class="pricing-item__price">$4</span>
+                                    <span class="pricing-item__per-month">/month per <br> user</span>
+                                </div>
+                                <span class="pricing-item__description">Most calendars are designed for teams.</span>
+                                <button class="pricing-item__button btn">Get Started</button>
+                            </div>
+                            <div class="swiper-slide pricing-items__item pricing-item">
+                                <span class="pricing-item__term">1 year</span>
+                                <div class="pricing-item__price-box">
+                                    <span class="pricing-item__price">$3</span>
+                                    <span class="pricing-item__per-month">/month per <br> user</span>
+                                </div>
+                                <span class="pricing-item__description">Most calendars are designed for teams.</span>
+                                <button class="pricing-item__button btn">Get Started</button>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            
+            </div>
+         </section>
+         <section class="about-us">
+            <div class="container about-us__container">
+                <h2 class="about-us__title">We focus on ergonomic
+                    meeting</h2>
+                    <div class="about-us__info">
+                        <p class="about-us__text">
+                            Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance businessbuilding...
+                        </p>
+                        <p class="about-us__text">
+                            Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance businessbuilding...
+                        </p>
+                        <button class="about-us__button btn">
+                            Get Started
+                        </button>
+                    </div>
+            </div>
+         </section>
+         <footer class="footer">
+            <div class="container footer__container">
+                <a href="/" class="footer__logo">
+                    <img src="images/logo.png" alt="Логотип">
+                    <span>Just type what's on your mind</span>
+                </a>
+                <div class="footer__menu">
                     <nav>
                         <ul class="nav-links">
                             <li><a href="#home">Home</a></li>
@@ -25,43 +225,35 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="button_menu">
-                    <a class="login_btn" href="#">Login</a>
-                </div>
-            </div>
-
-            <hr class="conf"/>
-
-            <div class="oval1"></div>
-            <div class="oval2"></div>
-
-
-
-            <div class="presentation">
-
-                <div class="presentation_text">
-                    <h1>Lightning fast prototyping</h1>
-                    <p>Most calendars are designed for teams. Slate is designed for freelancers.</p> 
-                </div>
-
-                <ul>
-                    <li class="start_btn"><a href="#">Get Started</a></li>
-                    <li class="try_btn"><a href="#">Try For Free</a></li>
+                <ul class="footer__socials">
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="">
+                            <svg class="footer__socials-icon">
+                                <use xlink:href="./images/sprite.svg#twitter"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="">
+                            <svg class="footer__socials-icon">
+                                <use xlink:href="./images/sprite.svg#facebook"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="">
+                            <svg class="footer__socials-icon">
+                                <use xlink:href="./images/sprite.svg#linkedin"></use>
+                            </svg> 
+                        </a>
+                    </li>
                 </ul>
-   
-            </div>
+            </div>  
+         </footer>
+	</main>
 
-
-            <div class="browser">
-                <img src="images/screen.png" alt="Браузер">
-            </div>
-
-
-		</div>
-        
-	</header>
-
-	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>
