@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                     <a href="/" class="logo_menu">
                         <img src="images/logo.png" alt="Логотип">
                     </a>
-                    <div class="menu">
+                    <div class="menu js--mobile-menu" >
                         <nav>
                             <ul class="nav-links">
                                 <li><a href="#home">Home</a></li>
@@ -28,9 +29,12 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="button_menu">
-                        <a class="login_btn" href="#">Login</a>
-                    </div>
+                    <button class="button_menu login_btn" data-modal-open>
+                    Contact us
+                    </button>
+                    <button class="header__burger-button js--header-button" type="button">
+                        <span class="header__burger-icon"></span>
+                    </button>
                 </div>
             </header>
     
@@ -252,8 +256,59 @@
          </footer>
 	</main>
 
+
+    <div class="modal" data-modal>
+        <div class=" modal__window">
+            <button class=" modal__close" type="button" data-modal-close>
+                <svg class="modal__svg" width="10" height="10">
+                    <use xlink:href="./images/icons2.svg#vector"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title">Contact Us</h2>
+            <form class="modal__signup signup" name="signup_form" autocomplete="on" novalidate>
+                <div class="signup__group">
+                    <label class="signup__label" for="name-label"> Name </label>
+                    <input class="signup__input" type="text" placeholder="" name="name" id="name-label">
+                    <svg class="signup__svg" width="18" height="18">
+                        <use xlink:href="./images/icons2.svg#person-black"></use>
+                    </svg>
+                </div>
+                <div class="signup__group">
+                    <label class="signup__label" for="tel-label"> Phone</label>
+                    <input class="signup__input" type="tel" name="tel" id="tel-label" />
+                    <svg class="signup__svg" width="18" height="18">
+                        <use xlink:href="./images/icons2.svg#phone-black"></use>
+                    </svg>
+                </div>
+                <div class="signup__group">
+                    <label class="signup__label" for="email-label"> E-mail</label>
+                    <input class="signup__input" type="email" name="email" id="email-label" />
+                    <svg class="signup__svg" width="18" height="18">
+                        <use xlink:href="./images/icons2.svg#email-black"></use>
+                    </svg>
+
+                </div>
+                <div class="signup__group">
+                    <label class="signup__label" for="textarea-label"> Comment</label>
+                    <div class="signup__comments">
+                        <textarea placeholder="Type comment" id="textarea-label"></textarea>
+                    </div>
+                </div>
+                <label class="signup__agreement" for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="signup__checkbox--hidden">
+                    <span class="signup__checkbox--active"></span>
+                    I agree with the mailing and accept
+                    <a class="signup__agreement-link">Conditions of the contract</a>
+                </label>
+                <button class="button signup__button" type="submit">Send</button>
+            </form>
+
+        </div>
+    </div>
+
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
